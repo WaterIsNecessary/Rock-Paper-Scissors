@@ -11,7 +11,76 @@
 
     <h2>The best of FIVE! Who will win?</h2>
 
-    <script src="/index.js"></script>
+    <h3>Computer Score</h3>
+
+    <p class="cpu"></p>
+
+    <h3>Human Score</h3>
+
+    <p class="human"></p>
+
+    <h4>RESULT</h4>
+
+    <p class="result"></p>
+
+    <script>
+
+        //const userInput = prompt(`Please enter your choice. Rock, Paper or Scissors? `);
+        
+        //userInput.toLowerCase();
+
+        function getComputerChoice() {
+            let rand = Math.floor(Math.random()*3);
+            let computerResponse;
+            if (rand === 0) {
+                computerResponse = `rock`;
+            } else if (rand === 1) {
+                computerResponse = `paper`;
+            } else {
+                computerResponse = `scissors`;
+            }
+            return computerResponse;
+        }
+
+        //const computerSelection = getComputerChoice();
+
+        function playRound(userInput, computerSelection) {
+            
+            if (userInput === `rock` && computerSelection === `rock` || userInput === `paper` && computerSelection === `paper` || userInput === `scissors` && computerSelection === `scissors`) {
+                alert(`Draw. Round not counted!`);
+            } else if (userInput === `rock` && computerSelection === `scissors` || userInput === `paper` && computerSelection === `rock` || userInput === `scissors` && computerSelection === `paper` ) {
+                document.querySelector(".human").innerHTML +="Win";          
+            } else {
+                document.querySelector(".cpu").innerHTML +="Win";
+            }
+
+        }
+
+        function game() {
+            
+            while (1) {
+                const userInput = prompt(`Please enter your choice. Rock, Paper or Scissors? `);
+                userInput.toLowerCase();
+                const computerSelection = getComputerChoice();
+                playRound(userInput, computerSelection);
+
+                if (document.querySelector(".human").innerHTML === "WinWinWin" || document.querySelector(".cpu").innerHTML === "WinWinWin" ) {
+                break;
+                }
+
+            }
+
+            if (document.querySelector(".human").innerHTML === "WinWinWin") {
+                document.querySelector(".result").innerHTML = "You Win!"
+            } else {
+                document.querySelector(".result").innerHTML = "The Computer Wins!"
+            }
+
+        }
+
+        game();
+
+    </script>
     
 </body>
 </html>

@@ -1,6 +1,10 @@
+//alert(`js is working`);
+
 let userInput = prompt(`Please enter your choice. Rock, Paper or Scissors? `);
 
-function getComputerChoice {
+//alert(userInput);
+
+function getComputerChoice() {
     let rand = Math.floor(Math.random()*3);
     let computerResponse;
     if (rand === 0) {
