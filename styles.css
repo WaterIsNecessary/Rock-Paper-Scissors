@@ -1,0 +1,100 @@
+* {
+
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+    
+}
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;           
+    background-color: black;
+    justify-content: center;    
+    align-items: center;   
+
+}
+
+.container {
+
+    min-height: 75vh;
+    min-width: 75vw;
+    background-color: black;
+    border: 5px white solid;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.heading {
+
+    font-weight: 900;
+    font-size: 60px;
+    border-bottom: 5px white solid;
+    align-self: stretch;
+    text-align: center;   
+
+}
+
+.scores {
+
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.menu {
+
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.messages {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.announcement {
+
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.announcementFinal {
+
+    font-size: 15px;    
+
+}
+
+.won {
+
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.lost {
+
+    color: blue;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+
+

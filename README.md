@@ -19,3 +19,11 @@ middle section of images.
 
 The technologies used for this project are HTML, CSS and Javascript.
 
+## To Do List:
+
+- Add better styling for the score board for the next iteration.
+- Add button styling with hover effects to the choice selection buttons for the next iteration.
+- Add a play again button with popup for the next iteration.
+- Add smiley icons to each of the respective finalGameMessages for the next iteration.
+- Possibly add a header and footer depending on aesthetics.
+- Refactor javascript code. 
